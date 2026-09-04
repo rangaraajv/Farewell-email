@@ -368,6 +368,45 @@
     @media (max-width: 900px) { .masonry { columns: 3; } }
     @media (max-width: 600px) { .masonry { columns: 2; } }
 
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      /* Section padding */
+      .section { padding: 60px 18px; }
+      .people-inner { padding: 60px 18px; }
+      .gallery-inner { padding: 60px 18px; }
+
+      /* Envelope */
+      .envelope { width: 280px; height: 192px; }
+      .env-flap-left  { border-width: 96px 0 96px 140px; }
+      .env-flap-right { border-width: 96px 140px 96px 0; }
+      .env-flap-bottom { border-width: 0 0 104px 280px; }
+      .env-flap-top   { border-width: 104px 140px 0 140px; }
+      .env-letter-paper { left: 14px; right: 14px; height: 162px; }
+      .env-letter-paper.rise { transform: translateY(-155px); }
+
+      /* Letter paper sheet */
+      .letter-paper-sheet { padding: 36px 24px 48px; }
+      .letter-paper-sheet .letter { font-size: 18px; line-height: 1.85; }
+      .letter-paper-sheet .letter .highlight { font-size: 19px; }
+      .letter-paper-sheet .letter .closing { font-size: 20px; }
+      .letter-date { font-size: 13px; }
+
+      /* Signature */
+      .letter-paper-sheet .signature-img.left { width: 180px; }
+
+      /* People grid — single column on very small screens */
+      .people-grid { grid-template-columns: 1fr 1fr; }
+
+      /* Closing section */
+      .closing-section { padding: 80px 20px; }
+    }
+
+    @media (max-width: 400px) {
+      .letter-paper-sheet { padding: 28px 16px 40px; }
+      .letter-paper-sheet .letter { font-size: 17px; }
+      .people-grid { grid-template-columns: 1fr; }
+    }
+
     .masonry-item {
       break-inside: avoid;
       margin-bottom: 6px;
